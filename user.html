@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="nav">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Logo">
+      </div>
+      <nav>
+        <a href="#video-edits">Video Edits</a>
+        <a href="#animations">Animations</a>
+        <a href="#artwork">Artwork</a>
+        <a href="#order">Order</a>
+        <a href="#reviews">Reviews</a>
+        <a href="login.html" class="btn">Login</a>
+        <a href="signup.html" class="btn">Sign Up</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="video-background">
+      <video src="vid/1.mp4" autoplay muted loop></video>
+      <video src="vid/2.gif" autoplay muted loop></video>
+      <video src="vid/3.mp4" autoplay muted loop></video>
+      <video src="vid/4.mp4" autoplay muted loop></video>
+    </div>
+
+    <div class="hero-text">
+      <h1>Welcome to Our Portfolio</h1>
+      <p>Animations, Edits, and More</p>
+    </div>
+  </section>
+
+  <main>
+    <section id="video-edits">
+      <h2>Video Edits</h2>
+      <!-- Video edits will appear here -->
+    </section>
+
+    <section id="animations">
+      <h2>Animations</h2>
+      <div class="media-grid">
+        <video src="vid/1.mp4" autoplay muted loop></video>
+        <img src="vid/2.gif" alt="Animation GIF" />
+        <video src="vid/3.mp4" autoplay muted loop></video>
+        <video src="vid/4.mp4" autoplay muted loop></video>
+      </div>
+    </section>
+
+    <section id="artwork">
+      <h2>Artwork</h2>
+      <!-- Artwork images or designs go here -->
+    </section>
+
+    <section id="order">
+      <h2>Place an Order</h2>
+      <form action="submit_order.php" method="POST" class="order-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="description" placeholder="Describe your request..." required></textarea>
+        <button type="submit">Submit Order</button>
+      </form>
+    </section>
+
+    <section id="reviews">
+      <h2>Reviews</h2>
+      <form action="submit_review.php" method="POST" class="review-form">
+        <input type="text" name="username" placeholder="Your Name" required>
+        <textarea name="review" placeholder="Your feedback..." required></textarea>
+        <button type="submit">Submit Review</button>
+      </form>
+
+      <div class="review-display">
+        <!-- PHP can fetch and show reviews here -->
+        <p>No reviews yet.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Extoll.co - All rights reserved
+  </footer>
+
+</body>
+</html>
